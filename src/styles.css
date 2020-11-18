@@ -1,1 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+}
+
+.spinner-custom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}

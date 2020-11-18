@@ -1,0 +1,23 @@
+<div class="row">
+  <div class="col-12 spinner-custom" *ngIf="loading">
+    <div class="spinner-border text-primary" role="status" >
+      <span class="sr-only">Loading...</span>
+    </div>
+  </div>
+  <div class="col-12" *ngIf="!loading">
+      <button routerLink='/' class="btn text-primary pl-0">
+        <h1>
+          <svg width="0.9em" height="0.9em" viewBox="0 0 16 16" class="bi bi-chevron-left mb-1" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+          </svg>
+          {{comment.title}}
+        </h1>
+      </button>
+    <hr>
+    <span class="badge badge-info mr-2">{{ comment.creator }}</span>
+    <span class="badge badge-info">{{ comment.dateCreation | date:'dd/MM/yyyy' }}</span>
+    <hr>
+    <h5>{{comment.description}}</h5>
+  </div>
+
+</div>
